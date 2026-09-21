@@ -1,0 +1,60 @@
+<table border="1">
+    <caption>Розклад руху автобусів</caption>
+    
+    <!-- Верхня частина з заголовками -->
+    <thead>
+        <tr>
+            <th rowspan="2">Номер маршруту</th>
+            <th rowspan="2">Місце відправлення</th>
+            <th rowspan="2">Місце прибуття</th>
+            <th colspan="2">Час</th>
+        </tr>
+        <tr>
+            <th>Час відправлення</th>
+            <th>Час прибуття</th>
+        </tr>
+    </thead>
+
+    <!-- Основна частина з даними -->
+    <tbody>
+        <tr>
+            <td rowspan="2">101</td>
+            <td rowspan="2">Луцьк</td>
+            <td rowspan="2">Львів</td>
+            <td>07:00</td>
+            <td>09:30</td>
+        </tr>
+        <tr>
+            <td>12:00</td>
+            <td>14:30</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Луцьк</td>
+            <td>Рівне</td>
+            <td>08:15</td>
+            <td>10:00</td>
+        </tr>
+        <tr>
+            <td>112</td>
+            <td>Луцьк</td>
+            <td>Ковель</td>
+            <td>09:30</td>
+            <td>11:15</td>
+        </tr>
+        <tr>
+            <td>120</td>
+            <td>Луцьк</td>
+            <td>Київ</td>
+            <td>10:00</td>
+            <td>16:00</td>
+        </tr>
+    </tbody>
+
+    <!-- Підсумкова частина -->
+    <tfoot>
+        <tr>
+            <td colspan="5">Всього рейсів: 5</td>
+        </tr>
+    </tfoot>
+</table>

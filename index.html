@@ -2,81 +2,65 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реєстрація на спортивний захід</title>
+    <title>Львів — місто, яке я хочу відвідати</title>
 </head>
 <body>
 
-<h1>Реєстрація на спортивний захід</h1>
+<nav>
+    <a href="index.html">Головна</a> |
+    <a href="info.html">Про місто</a>
+</nav>
 
-<form>
-    <label for="name">Ім'я:</label>
-    <input type="text" id="name" name="name" required>
-    <br><br>
+<h1>Львів</h1>
 
-    <label for="surname">Прізвище:</label>
-    <input type="text" id="surname" name="surname" required>
-    <br><br>
+<h2>Місто з історією</h2>
+<p>
+    Львів — одне з найцікавіших міст України.
+    <strong>Історичний центр Львова</strong> відомий своєю архітектурою.
+</p>
 
-    <label for="email">Електронна пошта:</label>
-    <input type="email" id="email" name="email" required>
-    <br><br>
+<h3>Чому я хочу побувати у Львові</h3>
+<p>
+    Мені цікаво побачити старовинні вулиці та площі.<br>
+    Особливо хочеться прогулятися центром міста.
+    <em>Це була б цікава подорож.</em>
+</p>
 
-    <label for="phone">Номер телефону:</label>
-    <input type="tel" id="phone" name="phone">
-    <br><br>
+<hr>
 
-    <label for="age">Вік:</label>
-    <input type="number" id="age" name="age" min="12" max="80">
-    <br><br>
+<h2 id="places">Пам'ятки Львова</h2>
+<ul>
+    <li>Площа Ринок</li>
+    <li>Львівська опера</li>
+    <li>Високий Замок</li>
+    <li>Латинський кафедральний собор</li>
+</ul>
 
-    <label for="date">Дата участі:</label>
-    <input type="date" id="date" name="date" required>
-    <br><br>
+<h2>Три причини відвідати Львів</h2>
+<ol>
+    <li>Побачити історичну архітектуру.</li>
+    <li>Прогулятися старовинними вулицями.</li>
+    <li>Познайомитися з культурою міста.</li>
+</ol>
 
-    <p><b>Оберіть дистанцію:</b></p>
-    <input type="radio" id="km2" name="distance" value="2 км" required>
-    <label for="km2">2 км</label><br>
+<div>
+    <h2>Моя майбутня подорож</h2>
+    <p>Я хочу відвідати Львів і побачити його найвідоміші місця.</p>
+    <button type="button" onclick="location.href='info.html'">Дізнатися більше</button>
+</div>
 
-    <input type="radio" id="km5" name="distance" value="5 км">
-    <label for="km5">5 км</label><br>
+<figure>
+    <img src="images/image.jpg" alt="Зображення Львова" width="700">
+    <figcaption>Львів — місто, яке я хочу відвідати.</figcaption>
+</figure>
 
-    <input type="radio" id="km10" name="distance" value="10 км">
-    <label for="km10">10 км</label>
+<p>
+    <a href="https://lviv.travel/" target="_blank">Офіційний туристичний сайт Львова</a>
+</p>
 
-    <p><b>Додаткові можливості:</b></p>
-    <input type="checkbox" id="shirt" name="shirt">
-    <label for="shirt">Отримати футболку</label><br>
-
-    <input type="checkbox" id="medal" name="medal">
-    <label for="medal">Отримати медаль</label><br>
-
-    <input type="checkbox" id="news" name="news">
-    <label for="news">Отримувати новини про наступні заходи</label><br>
-
-    <input type="checkbox" id="rating" name="rating">
-    <label for="rating">Додати результати до загального рейтингу</label>
-
-    <br><br>
-
-    <label for="category">Категорія учасника:</label>
-    <select id="category" name="category">
-        <option value="student_school">Учень</option>
-        <option value="student">Студент</option>
-        <option value="adult">Дорослий</option>
-        <option value="other">Інша категорія</option>
-    </select>
-
-    <br><br>
-
-    <label for="info">Додаткова інформація для організаторів:</label><br>
-    <textarea id="info" name="info" maxlength="250" rows="5" cols="40"></textarea>
-
-    <br><br>
-
-    <button type="submit">Зареєструватися</button>
-    <button type="reset">Очистити</button>
-</form>
+<p>
+    <a href="#places">Перейти до пам'яток</a>
+</p>
 
 </body>
 </html>

@@ -2,65 +2,107 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Львів — місто, яке я хочу відвідати</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store — Інтернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="site-header">
+        <h1>Tech Store</h1>
+        <p>Технології для навчання, роботи та відпочинку</p>
+    </header>
 
-<nav>
-    <a href="index.html">Головна</a> |
-    <a href="info.html">Про місто</a>
-</nav>
+    <nav class="menu">
+        <a href="#home">Головна</a>
+        <a href="#products">Товари</a>
+        <a href="#examples">Приклади CSS</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
 
-<h1>Львів</h1>
+    <main id="home">
+        <section class="intro">
+            <h2>Ласкаво просимо до Tech Store!</h2>
+            <p>Обирайте якісну техніку за вигідними цінами.</p>
+        </section>
 
-<h2>Місто з історією</h2>
-<p>
-    Львів — одне з найцікавіших міст України.
-    <strong>Історичний центр Львова</strong> відомий своєю архітектурою.
-</p>
+        <section id="products">
+            <h2>Популярні товари</h2>
+            <div class="products">
+                <article class="product">
+                    <span class="discount">-20%</span>
+                    <div class="product-icon">💻</div>
+                    <h3>Ноутбук</h3>
+                    <p>Ноутбук для навчання та роботи.</p>
+                    <p class="price">25 000 грн</p>
+                </article>
 
-<h3>Чому я хочу побувати у Львові</h3>
-<p>
-    Мені цікаво побачити старовинні вулиці та площі.<br>
-    Особливо хочеться прогулятися центром міста.
-    <em>Це була б цікава подорож.</em>
-</p>
+                <article class="product">
+                    <span class="discount">-15%</span>
+                    <div class="product-icon">📱</div>
+                    <h3>Смартфон</h3>
+                    <p>Потужний смартфон з якісною камерою.</p>
+                    <p class="price">15 000 грн</p>
+                </article>
 
-<hr>
+                <article class="product">
+                    <span class="discount">-10%</span>
+                    <div class="product-icon">🎧</div>
+                    <h3>Навушники</h3>
+                    <p>Бездротові навушники для музики та дзвінків.</p>
+                    <p class="price">3 500 грн</p>
+                </article>
+            </div>
+        </section>
 
-<h2 id="places">Пам'ятки Львова</h2>
-<ul>
-    <li>Площа Ринок</li>
-    <li>Львівська опера</li>
-    <li>Високий Замок</li>
-    <li>Латинський кафедральний собор</li>
-</ul>
+        <section class="banner-section">
+            <h2>Спеціальна пропозиція</h2>
+            <div class="banner">
+                <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1200&q=85" alt="Сучасна електроніка">
+                <button class="banner-button" type="button">Детальніше</button>
+            </div>
+        </section>
 
-<h2>Три причини відвідати Львів</h2>
-<ol>
-    <li>Побачити історичну архітектуру.</li>
-    <li>Прогулятися старовинними вулицями.</li>
-    <li>Познайомитися з культурою міста.</li>
-</ol>
+        <section id="examples" class="examples">
+            <h2>Демонстрація позиціонування CSS</h2>
 
-<div>
-    <h2>Моя майбутня подорож</h2>
-    <p>Я хочу відвідати Львів і побачити його найвідоміші місця.</p>
-    <button type="button" onclick="location.href='info.html'">Дізнатися більше</button>
-</div>
+            <h3>1. position: static</h3>
+            <p>Блоки розташовуються один за одним у звичайному потоці сторінки.</p>
+            <div class="static-box">Перший блок</div>
+            <div class="static-box static-test">Другий блок (top: 50px не діє)</div>
+            <div class="static-box">Третій блок</div>
 
-<figure>
-    <img src="images/image.jpg" alt="Зображення Львова" width="700">
-    <figcaption>Львів — місто, яке я хочу відвідати.</figcaption>
-</figure>
+            <h3>2. position: relative</h3>
+            <p>Блок зміщений від свого початкового положення на 20 px вниз і 40 px вправо.</p>
+            <div class="relative-box">Цей блок зміщений (relative)</div>
 
-<p>
-    <a href="https://lviv.travel/" target="_blank">Офіційний туристичний сайт Львова</a>
-</p>
+            <h3>3. position: absolute та relative</h3>
+            <p>Позначка знижки розташована у правому верхньому куті картки товару.</p>
 
-<p>
-    <a href="#places">Перейти до пам'яток</a>
-</p>
+            <h3>4. position: fixed</h3>
+            <p>Кнопка «Допомога» залишається у правому нижньому куті екрана під час прокручування.</p>
 
+            <h3>5. position: sticky</h3>
+            <p>Навігаційне меню прилипає до верхнього краю екрана під час прокручування.</p>
+
+            <h3>6. position: absolute та z-index</h3>
+            <p>Другий блок має більший z-index, тому він відображається поверх першого.</p>
+            <div class="layers">
+                <div class="box1">Блок 1<br>z-index: 1</div>
+                <div class="box2">Блок 2<br>z-index: 2</div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <h2>Контакти</h2>
+            <p>Дякуємо, що обираєте Tech Store!</p>
+            <p>Email: techstore@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Tech Store. Усі права захищено.</p>
+    </footer>
+
+    <button class="help" type="button">Допомога</button>
 </body>
 </html>
